@@ -5,6 +5,7 @@
     <vendor>mkaput</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.ultimate</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
