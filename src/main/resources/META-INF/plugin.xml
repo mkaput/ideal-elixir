@@ -8,4 +8,17 @@
     <depends>com.intellij.modules.ultimate</depends>
 
     <resource-bundle>messages.ExBundle</resource-bundle>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileType name="Elixir"
+                  language="Elixir"
+                  implementationClass="org.elixir.lang.ExFileType"
+                  extensions="ex"
+                  fieldName="INSTANCE"/>
+        <fileType name="Elixir script"
+                  language="Elixir"
+                  implementationClass="org.elixir.lang.ExScriptFileType"
+                  extensions="exs"
+                  fieldName="INSTANCE"/>
+    </extensions>
 </idea-plugin>
