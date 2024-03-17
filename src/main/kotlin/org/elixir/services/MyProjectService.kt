@@ -1,9 +1,9 @@
-package com.github.mkaput.idealelixir.services
+package org.elixir.services
 
 import com.intellij.openapi.components.Service
 import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.openapi.project.Project
-import com.github.mkaput.idealelixir.MyBundle
+import org.elixir.MyBundle
 
 @Service(Service.Level.PROJECT)
 class MyProjectService(project: Project) {

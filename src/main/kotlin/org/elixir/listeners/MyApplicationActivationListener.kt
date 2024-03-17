@@ -1,4 +1,4 @@
-package com.github.mkaput.idealelixir.listeners
+package org.elixir.listeners
 
 import com.intellij.openapi.application.ApplicationActivationListener
 import com.intellij.openapi.diagnostic.thisLogger

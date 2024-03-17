@@ -1,4 +1,4 @@
-package com.github.mkaput.idealelixir
+package org.elixir
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls

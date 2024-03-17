@@ -1,4 +1,4 @@
-package com.github.mkaput.idealelixir.toolWindow
+package org.elixir.toolWindow
 
 import com.intellij.openapi.components.service
 import com.intellij.openapi.diagnostic.thisLogger
@@ -8,8 +8,8 @@ import com.intellij.openapi.wm.ToolWindowFactory
 import com.intellij.ui.components.JBLabel
 import com.intellij.ui.components.JBPanel
 import com.intellij.ui.content.ContentFactory
-import com.github.mkaput.idealelixir.MyBundle
-import com.github.mkaput.idealelixir.services.MyProjectService
+import org.elixir.MyBundle
+import org.elixir.services.MyProjectService
 import javax.swing.JButton
 
 
