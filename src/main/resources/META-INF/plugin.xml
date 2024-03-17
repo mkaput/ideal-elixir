@@ -20,5 +20,7 @@
                   implementationClass="org.elixir.lang.ExScriptFileType"
                   extensions="exs"
                   fieldName="INSTANCE"/>
+
+        <platform.lsp.serverSupportProvider implementation="org.elixir.lsp.ExLspServerSupportProvider"/>
     </extensions>
 </idea-plugin>
