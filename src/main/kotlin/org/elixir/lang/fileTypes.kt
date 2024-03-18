@@ -3,29 +3,29 @@ package org.elixir.lang
 import com.intellij.icons.AllIcons
 import com.intellij.openapi.fileTypes.LanguageFileType
 import com.intellij.openapi.vfs.VirtualFile
-import org.elixir.ExBundle
+import org.elixir.ElixirBundle
 import javax.swing.Icon
 
-abstract class ExFileTypeBase : LanguageFileType(ExLanguage) {
+abstract class ElixirFileTypeBase : LanguageFileType(ElixirLanguage) {
     override fun getCharset(file: VirtualFile, content: ByteArray): String = "UTF-8"
 }
 
-object ExFileType : ExFileTypeBase() {
+object ElixirFileType : ElixirFileTypeBase() {
     override fun getName(): String = "Elixir"
 
-    override fun getDescription(): String = ExBundle.message("filetype.elixir.description")
+    override fun getDescription(): String = ElixirBundle.message("filetype.elixir.description")
 
     override fun getDefaultExtension(): String = "ex"
 
     override fun getIcon(): Icon = AllIcons.FileTypes.Json
 }
 
-object ExScriptFileType : ExFileTypeBase() {
+object ElixirScriptFileType : ElixirFileTypeBase() {
     override fun getName(): String = "Elixir script"
 
-    override fun getDisplayName(): String = ExBundle.message("filetype.elixirScript.displayName")
+    override fun getDisplayName(): String = ElixirBundle.message("filetype.elixirScript.displayName")
 
-    override fun getDescription(): String = ExBundle.message("filetype.elixirScript.description")
+    override fun getDescription(): String = ElixirBundle.message("filetype.elixirScript.description")
 
     override fun getDefaultExtension(): String = "exs"
 

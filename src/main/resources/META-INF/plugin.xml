@@ -7,20 +7,21 @@
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.modules.ultimate</depends>
 
-    <resource-bundle>messages.ExBundle</resource-bundle>
+    <resource-bundle>messages.ElixirBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
         <fileType name="Elixir"
                   language="Elixir"
-                  implementationClass="org.elixir.lang.ExFileType"
+                  implementationClass="org.elixir.lang.ElixirFileType"
                   extensions="ex"
                   fieldName="INSTANCE"/>
         <fileType name="Elixir script"
                   language="Elixir"
-                  implementationClass="org.elixir.lang.ExScriptFileType"
+                  implementationClass="org.elixir.lang.ElixirScriptFileType"
                   extensions="exs"
                   fieldName="INSTANCE"/>
 
-        <platform.lsp.serverSupportProvider implementation="org.elixir.lsp.ExLspServerSupportProvider"/>
+        <!--suppress PluginXmlValidity -->
+        <platform.lsp.serverSupportProvider implementation="org.elixir.lsp.ElixirLspServerSupportProvider"/>
     </extensions>
 </idea-plugin>

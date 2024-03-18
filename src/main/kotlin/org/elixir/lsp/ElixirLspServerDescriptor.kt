@@ -4,12 +4,12 @@ import com.intellij.execution.configurations.GeneralCommandLine
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.vfs.VirtualFile
 import com.intellij.platform.lsp.api.LspServerDescriptor
-import org.elixir.ExBundle
-import org.elixir.lang.ExFileTypeBase
+import org.elixir.ElixirBundle
+import org.elixir.lang.ElixirFileTypeBase
 
 @Suppress("UnstableApiUsage")
-class ExLspServerDescriptor(project: Project) : LspServerDescriptor(project, ExBundle.message("lsp.elixir.presentableName")) {
-    override fun isSupportedFile(file: VirtualFile): Boolean = file.fileType is ExFileTypeBase
+class ElixirLspServerDescriptor(project: Project) : LspServerDescriptor(project, ElixirBundle.message("lsp.elixir.presentableName")) {
+    override fun isSupportedFile(file: VirtualFile): Boolean = file.fileType is ElixirFileTypeBase
 
     override fun createCommandLine(): GeneralCommandLine {
         return GeneralCommandLine("/Users/mk/Downloads/elixir-ls-v0.20.0/language_server.sh")
